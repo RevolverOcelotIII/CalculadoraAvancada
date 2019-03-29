@@ -18,7 +18,8 @@ public class Calculadora {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int opt,x,y;
+        double x,y;
+        int opt;
         double result;
         
         JOptionPane.showMessageDialog(null, "CALCULADORA");
@@ -31,11 +32,13 @@ public class Calculadora {
         
             switch(opt){
                 case 0:
-                
+                    Soma calcSoma = new Soma();
+                    result=calcSoma.Soma(x,y);
                     break;
                 
                 case 1:
-                
+                    Subtração calcSub = new Subtração();
+                    result=calcSub.Subtração;
                     break;
                 
                 case 2:
@@ -48,6 +51,7 @@ public class Calculadora {
                     result=calcMult.Multiplicacao(x, y);
                     break;
             }
+            JOptionPane.showMessageDialog(null, "O resultado do cálculo é: "+result+"");
         }while(opt!=4);
     }
 }
