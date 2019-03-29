@@ -9,17 +9,8 @@ package calculadora;
  *
  * @author danpg
  */
-public class Calculos {
-    public int Soma(int val1,int val2){
-        return val1+val2;
-    }
-    public double Divisao(int val1,int val2){
-        return val1/val2;
-    }
+public class Multiplicação {
     public int Multiplicacao(int val1, int val2){
         return val1*val2;
-    }
-    public int Subtracao(int val1, int val2){
-        return val1-val2;
     }
 }
